@@ -1,0 +1,29 @@
+﻿@model SRC_Travel_Agencies.Models.Bus_Category
+
+@{
+    ViewData["Title"] = "Bus_Category";
+    Layout = "~/Views/Shared/Admin_header_footer.cshtml";
+}
+<center>
+<h1 style="color: white;">Add New Category</h1>
+</center>
+<hr />
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 col-xl-10">
+            <div class="nav-dd rounded h-100 p-4">
+        <form asp-action="Bus_Category">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Category_Name" class="control-label"></label>
+                <input asp-for="Category_Name" class="form-control" style="background-color: white;"/>
+                <span asp-validation-for="Category_Name" class="text-danger"></span>
+            </div>
+            <hr />
+            <div class="form-group">
+                <input type="submit" value="Add Category" class="btn btn-primary w-100" />
+            </div>
+        </form>
+    </div>
+</div>
+

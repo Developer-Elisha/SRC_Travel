@@ -1,0 +1,37 @@
+﻿@model SRC_Travel_Agencies.Models.reserve4
+@{
+    ViewData["Title"] = "Customer";
+    Layout = "~/Views/Shared/header_footer.cshtml";
+}
+
+
+<!-- PERSONAL INFO -->
+<fieldset class="animated fadeIn p-info">
+    
+                <form asp-action="Customer">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control"  asp-for="Name" name="name" placeholder="Elisha" onkeyup="verifyInfoForm()" id="name" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="phone">Mobile No.</label>
+            <input asp-for="phone" class="form-control" required placeholder="+92312345689" />
+            <span asp-validation-for="phone" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        
+        <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="text" class="form-control"  asp-for="Email"  id="email" name="email" placeholder="elisha@gamil.com" onkeyup="verifyInfoForm()" required>
+        </div>
+    </div>
+    <div class="row justify-content-center buttons">
+        <a href="@Url.Action("Book_Seats", "Ticket_Reservation")" class="btn btn-success book_btn" data-bus="1">Back</a>
+            <button type="submit" class="btn btn-success book_btn ml-5" data-bus="1">Continue</button>
+    </div>
+    </form>
+</fieldset>
+<!-- END PERSONAL INFO -->
+

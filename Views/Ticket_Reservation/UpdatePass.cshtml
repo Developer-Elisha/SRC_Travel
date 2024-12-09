@@ -1,0 +1,44 @@
+﻿@model SRC_Travel_Agencies.Models.Employees
+
+@{
+    ViewData["Title"] = "UpdatePass";
+    Layout = "~/Views/Shared/header_no_nav.cshtml"; // Adjust the layout path according to your project structure
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="UpdatePass" method="post" class="needs-validation" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"><h5>Update Password:</h5></label>
+                    <input asp-for="Password" class="form-control" required/>
+                    <div class="invalid-feedback"><h5 style="font-size: 15px;">Please provide a valid password.</h5></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Update Password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+        <script>
+            // Example of adding custom validation
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    var forms = document.getElementsByClassName('needs-validation');
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+

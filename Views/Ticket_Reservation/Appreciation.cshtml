@@ -1,0 +1,23 @@
+﻿@model SRC_Travel_Agencies.Models.Ticket
+
+@{
+    ViewData["Title"] = "Appreciation";
+    Layout = "~/Views/Shared/header_footer.cshtml";
+}
+<i class="fa fa-check-circle" style="font-size:100px;color:green"></i>
+<h3>Ticket Booked</h3>
+
+<p>Dear @ViewBag.login,</p>
+    <p>Thank you for your outstanding contributions!</p>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+       <form asp-action="GenerateTicket">
+           <button type="submit" class="btn btn-success">Generate your Ticket</button>
+        </form>
+    </div>
+</div>
+
+<div>
+</div>
+

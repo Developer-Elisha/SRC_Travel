@@ -1,0 +1,123 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SRC_Travel_Agencies
+build_property.RootNamespace = SRC_Travel_Agencies
+build_property.ProjectDir = D:\SRC Travel Agencies\SRC Website\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\SRC Travel Agencies\SRC Website
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Add_Buses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkX0J1c2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Add_Employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkX0VtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Booking_Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQm9va2luZ19EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Bus_Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQnVzX0NhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Our_Employees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3VyX0VtcGxveWVlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/showBuses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cc2hvd0J1c2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Update_Bus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlX0J1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Admin/Update_Emp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlX0VtcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Shared/Admin_header_footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluX2hlYWRlcl9mb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Shared/header_footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGhlYWRlcl9mb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Shared/header_no_nav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGhlYWRlcl9ub19uYXYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Shared/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/Appreciation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXEFwcHJlY2lhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/Booking_Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXEJvb2tpbmdfRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/Book_Seats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXEJvb2tfU2VhdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/Customer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXEN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/Ticket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXFRpY2tldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/Travel_Dates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXFRyYXZlbF9EYXRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/Ticket_Reservation/UpdatePass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0X1Jlc2VydmF0aW9uXFVwZGF0ZVBhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SRC Travel Agencies/SRC Website/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

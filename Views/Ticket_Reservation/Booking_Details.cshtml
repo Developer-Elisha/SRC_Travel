@@ -1,0 +1,121 @@
+﻿@model IEnumerable<SRC_Travel_Agencies.Models.Ticket>
+
+@{
+    ViewData["Title"] = "Booking_Details";
+    Layout = "~/Views/Shared/header_no_nav.cshtml";
+}
+
+ <div class="table-responsive">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                    @Html.DisplayNameFor(model => model.TicketId)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.BusId)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.From)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.To)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Distance)
+            </th>
+            <th>
+                    Estimated Hours
+            </th>
+            <th>
+                    Seat No.
+            </th>
+            <th>
+                    Ticket Price
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                   Cancle Ticket
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                        @Html.DisplayFor(modelItem => item.TicketId)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.BusId)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.From)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.To)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Distance)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Estimated_Hours)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Seat_Number)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Ticket_Price)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                        <a asp-action="Cancel_Ticket" asp-route-id="@item.TicketId" class="btn btn-success">Cancle Ticket</a>
+                </td>
+            </tr>
+            }
+    </tbody>
+</table>
+ </div>
+ <div class="row justify-content-center buttons">
+            <a href="@Url.Action("Index", "Ticket_Reservation")" class="btn btn-success">Continue Booking</a>
+        </div>
+
+                        <script>
+    window.onload = function () {
+        var table = document.getElementById('ticketTable');
+        if (table.rows.length > 10) {
+            table.classList.add('scrollable');
+        }
+    };
+</script>
+
+<style>
+    /* Style for scrollbar */
+    .scrollable {
+        max-height: 300px; /* Adjust height as needed */
+        overflow-y: auto;
+    }
+</style>

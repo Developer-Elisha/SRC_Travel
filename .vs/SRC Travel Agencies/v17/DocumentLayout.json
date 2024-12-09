@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SRC Travel Agencies\\SRC Website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\views\\ticket_reservation\\ticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:views\\ticket_reservation\\ticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\views\\ticket_reservation\\book_seats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:views\\ticket_reservation\\book_seats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\controllers\\ticket_reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:controllers\\ticket_reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\views\\ticket_reservation\\travel_dates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:views\\ticket_reservation\\travel_dates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\models\\reserve2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:models\\reserve2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\models\\reserve4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:models\\reserve4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\context\\sqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:context\\sqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|d:\\src travel agencies\\src website\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{64257F0E-E5B9-4E3F-94D2-BB43BC27DEF8}|SRC Travel Agencies.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ticket.cshtml",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Views\\Ticket_Reservation\\Ticket.cshtml",
+              "RelativeDocumentMoniker": "Views\\Ticket_Reservation\\Ticket.cshtml",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Views\\Ticket_Reservation\\Ticket.cshtml",
+              "RelativeToolTip": "Views\\Ticket_Reservation\\Ticket.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:24:40.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "reserve4.cs",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Models\\reserve4.cs",
+              "RelativeDocumentMoniker": "Models\\reserve4.cs",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Models\\reserve4.cs",
+              "RelativeToolTip": "Models\\reserve4.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T12:08:37.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SqlContext.cs",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Context\\SqlContext.cs",
+              "RelativeDocumentMoniker": "Context\\SqlContext.cs",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Context\\SqlContext.cs",
+              "RelativeToolTip": "Context\\SqlContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T12:08:24.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAuwA4BAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T12:01:05.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book_Seats.cshtml",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Views\\Ticket_Reservation\\Book_Seats.cshtml",
+              "RelativeDocumentMoniker": "Views\\Ticket_Reservation\\Book_Seats.cshtml",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Views\\Ticket_Reservation\\Book_Seats.cshtml",
+              "RelativeToolTip": "Views\\Ticket_Reservation\\Book_Seats.cshtml",
+              "ViewState": "AgIAABYBAAAAAAAAAAAAACYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T11:58:06.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T21:21:30.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T20:44:47.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Travel_Dates.cshtml",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Views\\Ticket_Reservation\\Travel_Dates.cshtml",
+              "RelativeDocumentMoniker": "Views\\Ticket_Reservation\\Travel_Dates.cshtml",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Views\\Ticket_Reservation\\Travel_Dates.cshtml",
+              "RelativeToolTip": "Views\\Ticket_Reservation\\Travel_Dates.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T20:25:16.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ticket_ReservationController.cs",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Controllers\\Ticket_ReservationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Ticket_ReservationController.cs",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Controllers\\Ticket_ReservationController.cs",
+              "RelativeToolTip": "Controllers\\Ticket_ReservationController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T12:08:56.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "reserve2.cs",
+              "DocumentMoniker": "D:\\SRC Travel Agencies\\SRC Website\\Models\\reserve2.cs",
+              "RelativeDocumentMoniker": "Models\\reserve2.cs",
+              "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Models\\reserve2.cs",
+              "RelativeToolTip": "Models\\reserve2.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T08:31:48.6Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

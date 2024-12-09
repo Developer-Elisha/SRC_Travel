@@ -1,0 +1,65 @@
+﻿@model IEnumerable<SRC_Travel_Agencies.Models.Upload_Bus>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/header_footer.cshtml";
+}
+
+<fieldset class="animated fadeIn">
+    <form asp-controller="Ticket_Reservation" asp-action="Index" method="post">
+        <div id="results">
+            <!-- <h6>3 buses found</h6> -->
+            <div class="row">
+                <div class="col-md-12">
+                    @foreach (var item in Model)
+                    {
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 bus-image">
+                                            <img src="~/assets/images/p2.png" alt="bus" height="130" width="130">
+                                                   <input type="hidden" value="@item.Bus_id" name="busId" class="Bus" />
+
+                                                    </div>
+                                        <div class="col-md-8 bus-details">
+                                            <h5 class="card-title bus-name">Bus Name: <span>@Html.DisplayFor(modelItem => item.Bus_name)</span></h5>
+                                            <div class="row card-text m-b-10 bus-description">
+                                                <div class="col-sm-6 fs-14">
+                                                    <i class="material-icons" style="font-size: 13px;">watch</i> @Html.DisplayNameFor(model => model.Category) <span> @Html.DisplayFor(modelItem => item.Category.Category_Name)</span>
+                                                </div>
+                                                <div class="col-sm-6 fs-14">
+                                                    <i class="fa fa-road"></i> Ticket Per KM
+                                                    <span class="p-r-5 fr"><span class="from">@Html.DisplayFor(modelItem => item.Bus_price)</span> </span>
+                                                </div>
+                                                <div class="col-sm-6 fs-14">
+                                                    <i class="material-icons" style="font-size: 13px;">event_seat</i> Air Condition
+                                                    <span class="p-r-5 fr"><span class="seats-left">@Html.DisplayFor(modelItem => item.Air_Condition)</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="p-t-13">
+                                                                        <button type="submit" asp-route-id="@item.Bus_id"  class="btn btn-circle btn-success book_btn" data-bus="1">Select Destination</button>
+                                                <div class="gallery1" style="display: none;">
+                                                    <a href="assets/gallery/majaoni1.jpg">
+                                                        <img src="assets/gallery/majaoni1.jpg" alt="" title="Majaoni Secondary Bus" />
+                                                    </a>
+                                                    <a href="assets/gallery/majaoni2.jpg">
+                                                        <img src="assets/gallery/majaoni2.jpg" alt="" title="Majaoni Secondary Bus" />
+                                                    </a>
+                                                    <a href="assets/gallery/majaoni3.jpg">
+                                                        <img src="assets/gallery/majaoni3.jpg" alt="" title="Majaoni Secondary Bus" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </form>
+</fieldset>
+
+
+
+

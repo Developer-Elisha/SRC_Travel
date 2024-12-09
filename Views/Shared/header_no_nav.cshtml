@@ -1,0 +1,107 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- for-mobile-apps -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#25274d">
+    <meta name="description" content="A bus seat reservation system made by James">
+    <meta name="author" content="James Muriitih">
+    <meta name="keywords" content="bus,bus seats,">
+    <meta property="og:site_name" content="google.com">
+    <meta property="og:title" content="Bus Seat Reservation System" />
+    <meta property="og:description" content="A bus seat reservation system made by James" />
+    <meta property="og:image:url" itemprop="image" content="A bus seat reservation system made by James">
+    <meta property="og:image" content="https://james-muriithi.github.io/bus/assets/images/logo-400.png" />
+    <meta property="og:image:url" content="https://james-muriithi.github.io/bus/assets/images/logo-400.png" />
+    <meta property="og:image:secure_url" content="https://james-muriithi.github.io/bus/assets/images/logo-400.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta name="application-name" content="My Bus" />
+    <meta name="apple-mobile-web-app-title" content="My Bus" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+
+    <link href="~/admin_assets/img/Favicon.png" rel="icon">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrapValidator.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/jquery.seat-charts.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link href="~/assets/fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/material.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/plugins/lobibox/css/lobibox.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/simplelightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Ticket_Reservation")">
+                    <img src="~/admin_assets/img/logo.png" alt="logo" height="70" width="160" style="margin-top: -10px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-user" style="font-size:24px"></i>
+                           <span class="d-none d-lg-inline-flex">@ViewBag.login</span>
+                        </a>
+            <div class="dropdown-menu dropdown-menu-end nav-dd border-0 rounded-0 rounded-bottom m-0">
+                    <a href="@Url.Action("Booking_Details", "Ticket_Reservation")" class="dropdown-item" >Booking Details</a>
+                    <a href="@Url.Action("UpdatePass", "Ticket_Reservation")" class="dropdown-item" >Change Password</a>
+                    <a class="dropdown-item" href="@Url.Action("logout", "Admin")">Log Out</a>
+                </div>
+        </div>
+    </li>
+</ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- </navbar -->
+    <!-- main content -->
+    <main class="col-md-12">
+        <div class="col-md-12 col-lg-11 col-xl-10 mx-auto window">
+            <section class="body">
+
+                @RenderBody()
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
+<!-- javascript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript " src="~/assets/js/jquery.min.js "></script>
+<script type="text/javascript " src="~/assets/js/popper.min.js "></script>
+<script type="text/javascript " src="~/assets/js/bootstrap.min.js "></script>
+<script type="text/javascript " src="~/assets/js/bootstrapValidator.js"></script>
+<script type="text/javascript " src="~/assets/js/jquery-easing.min.js "></script>
+<script type="text/javascript " src="~/assets/js/jquery.nice-select.js "></script>
+<script type="text/javascript " src="~/assets/js/jquery.seat-charts.js "></script>
+<script src="~/assets/plugins/material-datetimepicker/moment-with-locales.min.js "></script>
+<script src="~/assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.js "></script>
+<script src="~/assets/plugins/material-datetimepicker/datetimepicker.js "></script>
+<script type="text/javascript" src="~/assets/js/simple-lightbox.min.js"></script>
+<script type="text/javascript" src="~/assets/plugins/lobibox/js/lobibox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v6.6/mapsJavaScriptAPI.js"></script>
+
+<!-- end of js -->

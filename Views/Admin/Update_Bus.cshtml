@@ -1,0 +1,54 @@
+﻿@model SRC_Travel_Agencies.Models.Upload_Bus
+
+@{
+    ViewData["Title"] = "Update_Bus";
+    Layout = "~/Views/Shared/Admin_header_footer.cshtml";
+}
+
+<center>
+<h1  style="color: white;">Update_Bus</h1>
+</center>
+<hr />
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-xl-12">
+            <div class="nav-dd rounded h-100 p-4">
+        <form asp-action="Update_Bus">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Bus_id" />
+            <div class="form-group">
+                <label asp-for="Bus_name" class="control-label"></label>
+                <input asp-for="Bus_name" class="form-control" style="background-color: white;" />
+                <span asp-validation-for="Bus_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="category_Id" class="control-label"></label>
+                <select asp-for="category_Id" class ="form-control" asp-items="ViewBag.category_Id" style="background-color: white;">
+                    <option selected disabled>Select Category</option>
+                    @foreach (var c in ViewBag.Category)
+                    {
+                                  <option value="@c.Id">@c.Category_Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+    <label asp-for="Air_Condition" class="control-label"></label>
+    <select asp-for="Air_Condition" class="form-control" style="background-color: white;">
+        <option value="A/C">A/C</option>
+        <option value="Non A/C">Non A/C</option>
+    </select>
+    <span asp-validation-for="Air_Condition" class="text-danger"></span>
+</div>
+            <div class="form-group">
+                <label asp-for="Bus_price" class="control-label"></label>
+                <input asp-for="Bus_price" class="form-control" style="background-color: white;" />
+                <span asp-validation-for="Bus_price" class="text-danger"></span>
+            </div>
+            <hr />
+            <div class="form-group">
+                <input type="submit" value="Update Bus" class="btn btn-primary w-100" />
+            </div>
+        </form>    
+        </div>
+</div>
+

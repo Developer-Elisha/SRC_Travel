@@ -1,0 +1,87 @@
+﻿@model IEnumerable<SRC_Travel_Agencies.Models.Employees>
+
+@{
+    ViewData["Title"] = "Our_Employees";
+    Layout = "~/Views/Shared/Admin_header_footer.cshtml";
+}
+
+<!-- Table Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="nav-dd rounded h-100 p-4">
+                <div class="row justify-content-center buttons ">
+                <h4 class="mb-4">Our Employees</h4>
+                </div>
+                <div class="table-responsive">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                                    Phone Number
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qualification)
+            </th>
+            <th>
+                                    Joining Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td> 
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qualification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JoiningDate)
+            </td>
+            <td>
+                    <a asp-action="Update_Emp" asp-route-id="@item.EmployeeId">Edit</a> |
+                    <a asp-action="Delete_Employee" asp-route-id="@item.EmployeeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Table End -->

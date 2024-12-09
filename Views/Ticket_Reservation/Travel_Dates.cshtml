@@ -1,0 +1,186 @@
+﻿@model SRC_Travel_Agencies.Models.reserve2
+@{
+    ViewData["Title"] = "Travel_Dates";
+    Layout = "~/Views/Shared/header_footer.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lobibox/2.0.0/css/lobibox.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+<fieldset class="animated fadeIn">
+    <form asp-action="Travel_Dates" method="post" onsubmit="return validateForm()">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>From</label>
+                <select id="departure" name="From" class="form-control" asp-for="From" required>
+                    <option value="">Select Departure City</option>
+                </select>
+                <span asp-validation-for="From" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label>To</label>
+                <select id="destination" name="TO" class="form-control" asp-for="TO" required>
+                    <option value="">Select Destination City</option>
+                </select>
+                <span asp-validation-for="TO" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Date of travel</label>
+                <input type="date" class="form-control" asp-for="Date" required />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="hidden" asp-for="Distance" id="distanceInput" />
+                <input type="hidden" asp-for="Estimated_Hours" id="estimatedHoursInput" />
+            </div>
+        </div>
+        <div class="form-group col-md-12">
+            <button class="btn btn-success book_btn" type="button" onclick="calculateDistance()">Calculate Distance</button>
+        </div>
+        <div class="form-group d-flex col-12">
+            <div class="col-6">
+                <h5 id="distance" class="ml-5"></h5>
+            </div>
+            <div class="col-6">
+                <h5 id="estimated-hours"></h5>
+            </div>
+        </div>
+        <div id="map" style="height: 250px; color:#fff;"></div>
+
+        <div class="row justify-content-center buttons mt-5">
+            <a href="@Url.Action("Index", "Ticket_Reservation")" class="btn btn-success book_btn">Back</a>
+            <input type="submit" class="btn btn-success book_btn ml-5" style="color:white" value="Continue" />
+        </div>
+    </form>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // City data with coordinates
+        const pakistaniCities = {
+            "Karachi": { lat: 24.8607, lng: 67.0011 },
+            "Lahore": { lat: 31.5497, lng: 74.3436 },
+            "Islamabad": { lat: 33.6844, lng: 73.0479 },
+            "Rawalpindi": { lat: 33.5651, lng: 73.0169 },
+            "Peshawar": { lat: 34.0151, lng: 71.5249 },
+            "Quetta": { lat: 30.1798, lng: 66.9750 },
+            "Multan": { lat: 30.1575, lng: 71.5249 },
+            "Faisalabad": { lat: 31.4187, lng: 73.0791 },
+            "Sialkot": { lat: 32.4927, lng: 74.5319 },
+            "Hyderabad": { lat: 25.3960, lng: 68.3578 }
+        };
+
+        // Global variables for the map and route layer
+        let map;
+        let routeLayer;
+
+        // Initialize the map
+        function initializeMap() {
+            map = L.map('map').setView([30.3753, 69.3451], 5); // Centered on Pakistan
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+        }
+
+        // Populate dropdowns with cities
+        function populateCityOptions() {
+            const departureSelect = document.getElementById("departure");
+            const destinationSelect = document.getElementById("destination");
+
+            // Clear existing options
+            departureSelect.innerHTML = '<option value="">Select Departure City</option>';
+            destinationSelect.innerHTML = '<option value="">Select Destination City</option>';
+
+            // Add cities to both dropdowns
+            Object.keys(pakistaniCities).forEach(city => {
+                const option1 = new Option(city, city);
+                const option2 = new Option(city, city);
+
+                departureSelect.add(option1);
+                destinationSelect.add(option2);
+            });
+
+            // Prevent selecting the same city in both dropdowns
+            departureSelect.addEventListener("change", function () {
+                const selectedCity = this.value;
+                Array.from(destinationSelect.options).forEach(option => {
+                    option.disabled = option.value === selectedCity;
+                });
+            });
+
+            destinationSelect.addEventListener("change", function () {
+                const selectedCity = this.value;
+                Array.from(departureSelect.options).forEach(option => {
+                    option.disabled = option.value === selectedCity;
+                });
+            });
+        }
+
+        // Calculate the distance and display it
+        function calculateDistance() {
+            const departure = document.getElementById("departure").value;
+            const destination = document.getElementById("destination").value;
+
+            if (!departure || !destination) {
+                alert("Please select both departure and destination cities.");
+                return;
+            }
+
+            const departureCoords = pakistaniCities[departure];
+            const destinationCoords = pakistaniCities[destination];
+
+            const distance = calculateHaversineDistance(departureCoords, destinationCoords);
+            const distanceInKm = distance.toFixed(2);
+            const estimatedHours = (distance / 60).toFixed(2); // Assuming 60 km/h average speed
+
+            // Display distance and estimated hours
+            document.getElementById("distance").innerText = `Distance: ${distanceInKm} km`;
+            document.getElementById("estimated-hours").innerText = `Estimated Hours: ${estimatedHours} hrs`;
+            document.getElementById("distanceInput").value = distanceInKm;
+            document.getElementById("estimatedHoursInput").value = estimatedHours;
+
+            // Draw the route on the map
+            drawRoute(departureCoords, destinationCoords);
+        }
+
+        // Haversine formula to calculate the distance between two points
+        function calculateHaversineDistance(coord1, coord2) {
+            const R = 6371; // Radius of Earth in kilometers
+            const dLat = toRadians(coord2.lat - coord1.lat);
+            const dLng = toRadians(coord2.lng - coord1.lng);
+            const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(toRadians(coord1.lat)) * Math.cos(toRadians(coord2.lat)) *
+                Math.sin(dLng / 2) * Math.sin(dLng / 2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            return R * c; // Distance in km
+        }
+
+        // Convert degrees to radians
+        function toRadians(degrees) {
+            return degrees * (Math.PI / 180);
+        }
+
+        // Draw a route on the map
+        function drawRoute(start, end) {
+            if (routeLayer) {
+                map.removeLayer(routeLayer);
+            }
+
+            const startLatLng = [start.lat, start.lng];
+            const endLatLng = [end.lat, end.lng];
+
+            routeLayer = L.polyline([startLatLng, endLatLng], { color: 'red' }).addTo(map);
+
+            // Adjust map view to fit the route
+            map.fitBounds(routeLayer.getBounds());
+        }
+
+        // Initialize map and populate city options on page load
+        document.addEventListener("DOMContentLoaded", () => {
+            initializeMap();
+            populateCityOptions();
+        });
+
+    </script>
+</fieldset>

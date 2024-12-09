@@ -1,0 +1,438 @@
+﻿@model SRC_Travel_Agencies.Models.reserve3
+@{
+    ViewData["Title"] = "Book_Seats";
+    Layout = "~/Views/Shared/header_footer.cshtml";
+}
+<!-- seat map -->
+<fieldset class="animated fadeIn">
+    <div id="seats">
+        <div class="row no-gutters">
+            <div class="col-lg-8 col-xl-6 col-sm-8 col-md-7">
+                <!-- seat start -->
+                <div class="bus seat2-2" id="bus">
+                    <div class="seat-row-1">
+                        <div class="front-indicator">
+                            <img src="~/assets/images/driver.png" alt="Driver" height="">
+                        </div>
+                        <br><br>
+                        <ol class="seats">
+                            <li class="seat">
+                                <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-1-1" value="1"
+                                    required="" type="checkbox">
+                                <label for="seat-checkbox-1-1">
+                                    1 </label>
+                            </li>
+                            <li class="seat"></li>
+                            <li class="seat">
+                                <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-1-2" value="2"
+                                    required="" type="checkbox">
+                                <label for="seat-checkbox-1-2">
+                                    2 </label>
+                            </li>
+                            <li class="seat">
+                                <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-1-3" value="3"
+                                    required="" type="checkbox">
+                                <label for="seat-checkbox-1-3">
+                                    3 </label>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="seat-row-2">
+                        <ol class="seats">
+                            <li class="seat">
+                                <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-2-1" value="4"
+                                    required="" type="checkbox">
+                                <label for="seat-checkbox-2-1">
+                                    4 </label>
+                            </li>
+                            <li class="seat"></li>
+                            <li class="seat">
+                                <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-2-2" value="5"
+                                    required="" type="checkbox">
+                                <label for="seat-checkbox-2-2">
+                                    5 </label>
+                            </li>
+                            <li class="seat">
+                                <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-2-3" value="6"
+                                    required="" type="checkbox">
+                                <label for="seat-checkbox-2-3">
+                                    6 </label>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="seat-row-3">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-3-1" value="7"
+                required="" type="checkbox">
+            <label for="seat-checkbox-3-1">
+                7 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-3-2" value="8"
+                required="" type="checkbox">
+            <label for="seat-checkbox-3-2">
+                8 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-3-3" value="9"
+                required="" type="checkbox">
+            <label for="seat-checkbox-3-3">
+                9 </label>
+        </li>
+    </ol>
+</div>
+<div class="seat-row-4">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-4-1" value="10"
+                required="" type="checkbox">
+            <label for="seat-checkbox-4-1">
+                10 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-4-2" value="11"
+                required="" type="checkbox">
+            <label for="seat-checkbox-4-2">
+                11 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-4-3" value="12"
+                required="" type="checkbox">
+            <label for="seat-checkbox-4-3">
+                12 </label>
+        </li>
+    </ol>
+</div>
+<div class="seat-row-5">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-5-1" value="13"
+                required="" type="checkbox">
+            <label for="seat-checkbox-5-1">
+                13 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-5-2" value="14"
+                required="" type="checkbox">
+            <label for="seat-checkbox-5-2">
+                14 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-5-3" value="15"
+                required="" type="checkbox">
+            <label for="seat-checkbox-5-3">
+                15 </label>
+        </li>
+    </ol>
+</div>
+<div class="seat-row-6">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-6-1" value="16"
+                required="" type="checkbox">
+            <label for="seat-checkbox-6-1">
+                16 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-6-2" value="17"
+                required="" type="checkbox">
+            <label for="seat-checkbox-6-2">
+                17 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-6-3" value="18"
+                required="" type="checkbox">
+            <label for="seat-checkbox-6-3">
+                18 </label>
+        </li>
+    </ol>
+</div>
+<div class="seat-row-7">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-7-1" value="19"
+                required="" type="checkbox">
+            <label for="seat-checkbox-7-1">
+                19 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-7-2" value="20"
+                required="" type="checkbox">
+            <label for="seat-checkbox-7-2">
+                20 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-7-3" value="21"
+                required="" type="checkbox">
+            <label for="seat-checkbox-7-3">
+                21 </label>
+        </li>
+    </ol>
+</div>
+<div class="seat-row-8">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-8-1" value="22"
+                required="" type="checkbox">
+            <label for="seat-checkbox-8-1">
+                22 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-8-2" value="23"
+                required="" type="checkbox">
+            <label for="seat-checkbox-8-2">
+                23 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-8-3" value="24"
+                required="" type="checkbox">
+            <label for="seat-checkbox-8-3">
+                24 </label>
+        </li>
+    </ol>
+</div>
+<div class="seat-row-9">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-9-1" value="25"
+                required="" type="checkbox">
+            <label for="seat-checkbox-9-1">
+                25 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-9-2" value="26"
+                required="" type="checkbox">
+            <label for="seat-checkbox-9-2">
+                26 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-9-3" value="27"
+                required="" type="checkbox">
+            <label for="seat-checkbox-9-3">
+                27 </label>
+        </li>
+    </ol>
+</div>
+<div class="seat-row-10">
+    <ol class="seats">
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-10-1" value="28"
+                required="" type="checkbox">
+            <label for="seat-checkbox-10-1">
+                28 </label>
+        </li>
+        <li class="seat">
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-10-2" value="29"
+                required="" type="checkbox">
+            <label for="seat-checkbox-10-2">
+                29 </label>
+        </li>
+        <li class="seat">
+            <input role="input-passenger-seat" name="passengers[1][seat]" id="seat-checkbox-10-3" value="30"
+                required="" type="checkbox">
+            <label for="seat-checkbox-10-3">
+                30 </label>
+        </li>
+    </ol>
+</div>
+                </div>
+            </div>
+            
+               <div class="col-lg-4 col-xl-6 col-sm-4 col-md-5">
+    <div style="height: 20px; width: 120px; background-color: #969696; margin-bottom: 10px;">
+        <label style="color: white; padding: 5px;">Available Seats</label>
+    </div>
+    <div style="height: 20px; width: 120px; background-color: #46BE8A; margin-bottom: 10px;">
+        <label style="color: white; padding: 5px;">Selected Seats</label>
+    </div>
+    <div style="height: 20px; width: 120px; background-color: #F73737; margin-bottom: 10px;">
+        <label style="color: white; padding: 5px;">Reserved Seats</label>
+    </div>
+
+    <form asp-action="Book_Seats" method="post">
+        <div class="booking-details">
+            <h2 class="header">Booking Details
+                <span class="number_plate badge badge-primary fs-12"></span>
+            </h2>
+            <h3>Selected Seats <span id="counter">0</span>:</h3>
+            <h3>Distance: <span id="distance1">0</span></h3>
+            <input type="hidden" id="specificSeatInput" placeholder="Enter specific seat number" value="@string.Join(",", ViewBag.SeatNumbers)"  required>
+            <input type="hidden" id="selectedSeatValues" asp-for="Seat_Number" placeholder="Selected Seats" required>
+            <ul id="selected-seats" class="selected-seats"></ul>
+            <div id="ageInputs" class="selected-seats"></div>
+            <br>
+            <div class="price" > <span id="price" style="display: none;">6</span> </div>
+            <div class="price"></div>
+            <input id="calculatedPriceInput" type="hidden" class="price" asp-for="Ticket_Price" required>
+        </div>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-4 d-flex justify-content-end">
+                                <a href="@Url.Action("Travel_Dates", "Ticket_Reservation")" class="btn btn-success book_btn">Back</a>
+                            </div>
+                            <div class="col-4 d-flex justify-content-start">
+                                <button type="submit" class="btn btn-success book_btn">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+
+    </form>
+</div>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const specificSeatInput = document.getElementById('specificSeatInput');
+    const seatNumbersString = specificSeatInput.value.trim();
+    const seatNumbers = seatNumbersString.split(',').map(num => parseInt(num.trim()));
+
+    seatNumbers.forEach(seatNumber => {
+        if (seatNumber >= 1 && seatNumber <= 30) {
+            const seat = document.querySelector(`input[value="${seatNumber}"][type="checkbox"]`);
+            if (seat) {
+                seat.checked = true;
+                seat.disabled = true;
+            }
+        }
+    });
+    // Display distance in distance input
+    const distance = parseFloat(localStorage.getItem('distance'));
+
+    // Set distance input value if available
+    if (!isNaN(distance)) {
+        document.getElementById('distance1').innerText = distance;
+    }
+    const priceSpan = document.getElementById('price');
+    const initialPrice = parseFloat(priceSpan.textContent);
+
+    const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+            if (mutation.type === 'childList') {
+                const newPrice = parseFloat(mutation.target.textContent);
+                calculateCharges(newPrice);
+            }
+        });
+    });
+
+    observer.observe(priceSpan, { childList: true });
+
+    const seats = document.querySelectorAll('input[type="checkbox"]');
+    const selectedSeats = [];
+
+    seats.forEach(seat => {
+        seat.addEventListener("change", () => {
+            const seatId = seat.id;
+            const seatIndex = selectedSeats.indexOf(seatId);
+            if (seat.checked && seatIndex === -1) {
+                selectedSeats.push(seatId);
+                seat.parentNode.classList.add('selected');
+            } else if (!seat.checked && seatIndex !== -1) {
+                selectedSeats.splice(seatIndex, 1);
+                seat.parentNode.classList.remove('selected');
+            }
+            updateInputs();
+        });
+    });
+
+    function updateInputs() {
+        const selectedSeatsCount = selectedSeats.length;
+        const ageInputsContainer = document.getElementById('ageInputs');
+        ageInputsContainer.innerHTML = '';
+        document.getElementById('counter').innerText = selectedSeatsCount;
+
+        if (selectedSeatsCount > 0) {
+            const selectedSeatValues = selectedSeats.map(seatId => document.querySelector(`label[for="${seatId}"]`).innerText.trim());
+            document.getElementById('selectedSeatValues').value = selectedSeatValues.join(', ');
+            for (let i = 0; i < selectedSeatsCount; i++) {
+                const select = document.createElement('select');
+                select.name = `passengers[${i + 1}][ageGroup]`;
+                select.required = true;
+                select.style.width = "30vh";
+                select.style.height = "6vh";
+                select.style.marginTop = "1vh";
+                ["0-5", "6-12", "12-50", "above 50"].forEach(option => {
+                    const optionElement = document.createElement('option');
+                    optionElement.value = option;
+                    optionElement.textContent = option;
+                    optionElement.style.width = "200px";
+                    select.appendChild(optionElement);
+                });
+                ageInputsContainer.appendChild(select);
+            }
+        }
+    }
+
+    document.getElementById('ageInputs').addEventListener('change', () => {
+        calculateCharges(initialPrice);
+    });
+
+    function calculateCharges(price) {
+        const distance = parseFloat(localStorage.getItem('distance'));
+        const selectedAgeGroups = document.querySelectorAll('#ageInputs select');
+
+        let totalCharges = 0;
+
+        selectedAgeGroups.forEach(select => {
+            const ageGroup = select.value;
+            switch (ageGroup) {
+                case "0-5":
+                    break;
+                case "6-12":
+                    totalCharges += distance * 0.5 * price;
+                    break;
+                case "12-50":
+                    totalCharges += distance * price;
+                    break;
+                case "above 50":
+                    totalCharges += distance * 0.7 * price;
+                    break;
+            }
+        });
+
+        // Convert totalCharges to integer (remove decimal places)
+        totalCharges = Math.round(totalCharges);
+
+        // Update the hidden input field with the calculated price
+        document.getElementById('calculatedPriceInput').value = totalCharges;
+        // Update the displayed price
+        document.querySelector('.price').innerText = `Total Charges: ${totalCharges} PKR`;
+    }
+
+    const bookButtons = document.querySelectorAll('.book_btn');
+
+    bookButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const selectedSeatsCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            if (selectedSeatsCount === 0) {
+                event.preventDefault(); // Stop default behavior
+                alert("No Seat Selected! Please select at least one seat from the selected bus.");
+            }
+        });
+    });
+
+    // Append comma after page load
+    specificSeatInput.value += ",";
+
+});
+
+
+</script>
+</fieldset>
+<!-- END SEAT MAP -->

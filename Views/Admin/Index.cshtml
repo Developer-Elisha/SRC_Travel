@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Admin_header_footer.cshtml";
+}
+
+<link href="path/to/font-awesome/css/all.min.css" rel="stylesheet">
+
+<!-- Sale & Revenue Start -->
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+    <br><br><br><br>
+    <div class="row g-4">
+        <div class="col-sm-6 col-xl-9">
+            <div class="nav-dd rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-user fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2"></p>
+                    <h4 class="mb-0">Total Employees: @ViewBag.TotalEmployees</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-9">
+            <div class="nav-bg rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-bus fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2"></p>
+                    <h4 class="mb-0">Total Buses: @ViewBag.TotalBuses</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-9">
+            <div class="nav-bg rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-list-alt fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <h4 class="mb-0">Total Bus Categories: @ViewBag.totalBusCategory</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-9">
+            <div class="nav-bg rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fas fa-ticket-alt fa-3x text-primary rotate-15"></i>
+                <div class="ms-3">
+                    <h4 class="mb-0">Total Ticket Booked: @ViewBag.TotalTickets</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sale & Revenue End -->
+
+                    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>

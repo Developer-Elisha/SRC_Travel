@@ -1,0 +1,113 @@
+﻿@model IEnumerable<SRC_Travel_Agencies.Models.Ticket>
+
+@{
+    ViewData["Title"] = "Ticket";
+    Layout = "~/Views/Shared/header_footer.cshtml";
+}
+<fieldset class="animated fadeIn p-info">
+    <main class="col-md-12">
+        <div class="col-md-11 col-lg-9 col-xl-10 mx-auto window">
+            <div class="ticket-container">
+                @foreach (var item in Model)
+                {
+                    <div class="ticket">
+                        <div class="ticket-header text-center">
+                            <img src="~/admin_assets/img/logo_dark.png" alt="Logo" height="70" width="160">
+                            <h4>Travel Ticket</h4>
+                        </div>
+                        <div class="ticket-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong>From:</strong> @Html.DisplayFor(modelItem => item.From)<br>
+                                    <strong>To:</strong> @Html.DisplayFor(modelItem => item.To)<br>
+                                    <strong>Date:</strong> @Html.DisplayFor(modelItem => item.Date)<br>
+                                    <strong>Seat Number:</strong> @Html.DisplayFor(modelItem => item.Seat_Number)
+                                </div>
+                                <div class="col-6">
+                                    <strong>Distance:</strong> @Html.DisplayFor(modelItem => item.Distance)<br>
+                                    <strong>Estimated Hours:</strong> @Html.DisplayFor(modelItem => item.Estimated_Hours)<br>
+                                    <strong>Price:</strong> @Html.DisplayFor(modelItem => item.Ticket_Price)<br>
+                                    <strong>Ticket ID:</strong> @Html.DisplayFor(modelItem => item.TicketId)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-footer">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong>Name:</strong> @Html.DisplayFor(modelItem => item.Name)
+                                </div>
+                                <div class="col-6">
+                                    <strong>Email:</strong> @Html.DisplayFor(modelItem => item.Email)<br>
+                                    <strong>Phone:</strong> @Html.DisplayFor(modelItem => item.Phone)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </main>
+    <div class="row justify-content-center buttons">
+        <button type="button" class="btn btn-success" onclick="printContent()">Print Ticket</button>
+        <a href="@Url.Action("Index", "Ticket_Reservation")" class="btn btn-success ml-5">Continue Booking</a>
+    </div>
+</fieldset>
+
+<script>
+    function printContent() {
+        var ticketContent = document.querySelector('.ticket-container').outerHTML;
+
+        var originalContent = document.body.innerHTML;
+        document.body.innerHTML = ticketContent;
+
+        window.print();
+
+        document.body.innerHTML = originalContent;
+        location.reload();
+    }
+</script>
+
+<style>
+    .ticket-container {
+        margin-top: 20px;
+    }
+
+    .ticket {
+        border: 2px solid #28a745;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    .ticket-header {
+        margin-bottom: 15px;
+    }
+
+    .ticket-header h4 {
+        margin-top: 10px;
+        color: #28a745;
+    }
+
+    .ticket-body,
+    .ticket-footer {
+        padding: 10px 0;
+    }
+
+    .ticket-body .col-6,
+    .ticket-footer .col-6 {
+        margin-bottom: 10px;
+    }
+
+    .ticket-body strong,
+    .ticket-footer strong {
+        color: #333;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+     
+</style>
