@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Views\\Ticket_Reservation\\Ticket.cshtml",
               "ToolTip": "D:\\SRC Travel Agencies\\SRC Website\\Views\\Ticket_Reservation\\Ticket.cshtml",
               "RelativeToolTip": "Views\\Ticket_Reservation\\Ticket.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADkAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-09T10:24:40.883Z",
               "EditorCaption": ""
@@ -111,8 +111,7 @@
               "RelativeToolTip": "Views\\Ticket_Reservation\\Book_Seats.cshtml",
               "ViewState": "AgIAABYBAAAAAAAAAAAAACYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T11:58:06.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T11:58:06.021Z"
             },
             {
               "$type": "Document",
@@ -148,8 +147,7 @@
               "RelativeToolTip": "Views\\Ticket_Reservation\\Travel_Dates.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T20:25:16.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T20:25:16.426Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "Controllers\\Ticket_ReservationController.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T12:08:56.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T12:08:56.145Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "Models\\reserve2.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T08:31:48.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T08:31:48.6Z"
             }
           ]
         }
